@@ -1,0 +1,66 @@
+/*The awesome font*/
+@font-face {
+	font-family: 'IcoMoon';
+	src: url('fonts/IcoMoon.eot');
+	src: url('fonts/IcoMoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/IcoMoon.svg#IcoMoon') format('svg'),
+		url('fonts/IcoMoon.woff') format('woff'),
+		url('fonts/IcoMoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body{
+	text-align:center;
+	background: #CCC url(subtlenet2.png);
+	color: #444;
+	font-family: sans-serif;
+	font-size:1.8em;
+	max-width: 600px;
+	margin: 0 auto;
+	text-rendering: optimizeSpeed;
+}
+
+.warning{
+	font-size: .5em;
+}
+
+#demo{
+	height: 18em;
+	overflow: hidden;
+}
+
+.demo{
+	font-size: 2em;
+}
+
+.demo.liga{
+	font-size: 10em;
+	line-height: 0;
+}
+
+.liga{
+	font-family: IcoMoon, sans-serif;
+	text-rendering: optimizeLegibility;
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+  	-ms-font-feature-settings: "liga";
+  	-o-font-feature-settings: "liga";
+  	-webkit-font-feature-settings: "liga";
+  	font-feature-settings: "liga";
+}
+
+a{
+	text-decoration: none;
+	color:#666;
+}
+
+#trigger{
+	color:#EEE;
+	background: #444;
+	border-radius:5px;
+	padding: 10px 30px;
+}
+footer{
+	margin:4em 0;
+}

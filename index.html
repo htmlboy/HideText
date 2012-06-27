@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hiding text with ligatures</title>
+	<link rel=stylesheet href=style.css>
+</head>
+<body>
+<article>
+	<header>
+		<p class="warning">
+			Please notice: this demo will only work if your browser supports ligatures with spaces <br>(Chrome 17+, Safari 5+).
+		</p>
+
+		This is a special font with just one character (the rocket) linked to a paragraph as a ligature itself. So it's a real text block, hidden as a huge ligature if your browser supports ligatures with spaces (right now, only Chrome 17+ and Safari 5+).</p> 
+		<p>As far as I've seen, Firefox supports ligatures but not ligatures with spaces.
+	</header>
+
+	<div id="demo">	
+		<p class="demo liga">
+			ZOMG!!! Hidden text!! SEO is coming! I love rockets. What's your favorite pizza flavor? I think I could type nonsense forever.	
+		</p>
+	</div>
+	<p>
+		<a href="#" id="trigger">Toggle font</a>
+
+	</p>
+	<footer class="warning">
+		Experiment made by <a href="http://www.twitter.com/htmlboy">@htmlboy</a>, from <a href="http://swwweet.com">Swwweet.com</a>. <br>This font was made with a great tool called <a href="http://keyamoon.com/icomoon/app/">IcoMoon</a>. 
+	</footer>
+</article>
+<script src="jquery.min.js"></script>
+<script>
+		$(document).ready(function($) {
+		$("#trigger").click(
+		function(){
+			$("#demo p").toggleClass("liga");
+			return false;
+		}
+	);
+	});
+</script>
+</body>
+</html>
